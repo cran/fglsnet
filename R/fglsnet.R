@@ -1,6 +1,8 @@
 #' A Feasible Generalized Least Squares Estimator for Regression Analysis of Outcomes with Network Dependence
 #'
-#' \code{fglsnet} estimates a multivariate regression model for analyzing outcomes with network dependence.
+#' \code{fglsnet} estimates a multivariate regression model for analyzing outcomes with network dependence. 
+#' One nice feature of the function is that it can distinguish three types of error dependence, 
+#' including triadic dependence, mutual dependence, and asymmetric dependence.
 #'  
 #' @param formula A formula indicating the regression model. 
 #'
@@ -17,6 +19,8 @@
 #' @param data The data that are used for the regression.
 #' 
 #' @details The function estimates a multivariate regression model for analyzing outcomes with network dependence.
+#' One nice feature of the function is that it can distinguish three types of error dependence, 
+#' including triadic dependence, mutual dependence, and asymmetric dependence.
 #' 
 #' @return A list containing the coefficient \code{coef}, the testing results on the error correlations \code{rtest}, 
 #' the estimated error variance \code{Sigma}, the estimated error correlation matrix \code{Omega}, and the OLS estimates \code{ols}.
@@ -27,13 +31,13 @@
 #' 
 #' @import sna
 #' 
+#' @import network
+#' 
 #' @import sandwich 
 #' 
 #' @importFrom Matrix nearPD
 #' 
 #' @importFrom matrixcalc is.positive.definite
-#'  
-#' @importFrom network network
 #' 
 #' @importFrom MASS mvrnorm
 #' 
@@ -48,7 +52,7 @@
 #' 
 #' @references
 #' 
-#' An, Weihua. 2021. ``A Tale of Twin-Dependence: A New Multivariate Regression Model and an FGLS Estimator for Analyzing Outcomes with Network Dependence." \emph{Sociological Methods and Research}. (Forthcoming)
+#' An, Weihua. 2023. ``A Tale of Twin-Dependence: A New Multivariate Regression Model and an FGLS Estimator for Analyzing Outcomes with Network Dependence." \emph{Sociological Methods and Research} 52(4): 1947-1980. 
 #' 
 #' Greene, William H. (2008). \emph{Econometric Analysis} (6th edition). New Jersey: Pearson Prentice Hall.\cr
 #' 

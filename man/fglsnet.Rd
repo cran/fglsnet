@@ -34,10 +34,14 @@ A list containing the coefficient \code{coef}, the testing results on the error 
 the estimated error variance \code{Sigma}, the estimated error correlation matrix \code{Omega}, and the OLS estimates \code{ols}.
 }
 \description{
-\code{fglsnet} estimates a multivariate regression model for analyzing outcomes with network dependence.
+\code{fglsnet} estimates a multivariate regression model for analyzing outcomes with network dependence. 
+One nice feature of the function is that it can distinguish three types of error dependence, 
+including triadic dependence, mutual dependence, and asymmetric dependence.
 }
 \details{
 The function estimates a multivariate regression model for analyzing outcomes with network dependence.
+One nice feature of the function is that it can distinguish three types of error dependence, 
+including triadic dependence, mutual dependence, and asymmetric dependence.
 }
 \examples{
 data(dat)
@@ -48,7 +52,7 @@ g$coef
 
 }
 \references{
-An, Weihua. 2021. ``A Tale of Twin-Dependence: A New Multivariate Regression Model and an FGLS Estimator for Analyzing Outcomes with Network Dependence." \emph{Sociological Methods and Research}. (Forthcoming)
+An, Weihua. 2023. ``A Tale of Twin-Dependence: A New Multivariate Regression Model and an FGLS Estimator for Analyzing Outcomes with Network Dependence." \emph{Sociological Methods and Research} 52(4): 1947-1980. 
 
 Greene, William H. (2008). \emph{Econometric Analysis} (6th edition). New Jersey: Pearson Prentice Hall.\cr
 }
